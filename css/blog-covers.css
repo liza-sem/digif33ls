@@ -50,12 +50,12 @@
     flex-direction: column;
     justify-content:start;
     align-items:start;
-    padding:2vw;
+    padding: 2vw;
     h1,span,a,div{
     color: white !important;
     }
   }
   .blog-cover{
-    filter:brightness(.5);
+    filter: brightness(.5);
   }
 }
