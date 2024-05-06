@@ -8,7 +8,7 @@
 
   .cover-split {
     gap: 17px;
-    flex-direction: column-reverse;
+    flex-direction: column;
 
   .blog-cover, .blog-details {
     width: 100% !important;
