@@ -29,7 +29,7 @@
 
 /* Desktop styles */
 @media only screen and (min-width: 768px) {
-  cover-split {
+  .cover-split {
   .blog-cover, .blog-details {
     width: 50%;
   }
