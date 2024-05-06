@@ -12,7 +12,7 @@
 
   .cover-split {
     gap: 17px;
-    flex-direction: column-reverse;
+    flex-direction: column;
 
   .blog-cover, .blog-details {
     width: 100% !important;
@@ -29,6 +29,7 @@
 
 /* Desktop styles */
 @media only screen and (min-width: 768px) {
+  cover-split {
   .blog-cover, .blog-details {
     width: 50%;
   }
@@ -40,6 +41,7 @@
     justify-content: start;
     padding-left: var(--sqs-site-gutter);
   }
+}
 }
 
 .cover-overlay {
