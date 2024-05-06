@@ -13,7 +13,6 @@
   .cover-split {
     gap: 17px;
     flex-direction: column-reverse;
-  }
 
   .blog-cover, .blog-details {
     width: 100% !important;
@@ -25,6 +24,7 @@
       height: auto !important;
     }
   }
+  }
 }
 
 /* Desktop styles */
@@ -35,7 +35,7 @@
 
   .blog-details {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: start;
     justify-content: start;
     padding-left: var(--sqs-site-gutter);
