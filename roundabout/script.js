@@ -1,4 +1,4 @@
-  document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
   var baseRadius = 320;
   var autoRotate = true;
   var rotateSpeed = 7;
@@ -39,6 +39,7 @@
 
   var ospindrag = document.querySelector('.fe-block-yui_3_17_2_1_1717071640427_17223 .summary-item-list');
   var aImg = ospindrag.querySelectorAll('.summary-item');
+  var parentContainer = document.querySelector('.summary-item-list-container');
 
   var aEle = [...aImg];
 
@@ -124,6 +125,14 @@
       applyTransform();
       sX = nX;
       sY = nY;
+
+      // Shift the parent container up or down by 50px
+      if (Math.abs(desY) > 50) {
+        var currentTop = parseInt(window.getComputedStyle(parentContainer).top, 10) || 0;
+        var newTop = currentTop + (desY > 0 ? 50 : -50);
+        parentContainer.style.top = newTop + "px";
+        sY += (desY > 0 ? 50 : -50);
+      }
     };
 
     document.onpointerup = function () {
