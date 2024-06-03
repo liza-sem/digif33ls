@@ -71,7 +71,7 @@
     }
   }
 
-  var currentRotateX = -10;  // Initial rotation
+  var currentRotateX = -5;  // Initial rotation
   var currentRotateY = 0;
   var dragging = false;
   var lastTime = 0;
