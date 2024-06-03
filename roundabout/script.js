@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener("DOMContentLoaded", function () {
   var baseRadius = 320;
   var autoRotate = true;
   var rotateSpeed = 7;
@@ -39,7 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var ospindrag = document.querySelector('.fe-block-yui_3_17_2_1_1717071640427_17223 .summary-item-list');
   var aImg = ospindrag.querySelectorAll('.summary-item');
-  var parentContainer = document.querySelector('.summary-item-list-container');
 
   var aEle = [...aImg];
 
@@ -107,8 +106,6 @@ document.addEventListener("DOMContentLoaded", function () {
     desY = 0;
 
   var dragArea = document.querySelector('section[data-section-id="66549d7eeeeaf012a576eb48"]');
-  var isShifted = false; // To track the shift state
-
   dragArea.onpointerdown = function (e) {
     dragging = true;
     e = e || window.event;
@@ -127,14 +124,6 @@ document.addEventListener("DOMContentLoaded", function () {
       applyTransform();
       sX = nX;
       sY = nY;
-
-      // Shift the parent container up or down by 50px based on the drag direction
-      if (Math.abs(desY) > 50 && !isShifted) {
-        var currentTop = parseInt(window.getComputedStyle(parentContainer).top, 10) || 0;
-        var newTop = desY > 0 ? currentTop + 50 : currentTop - 50;
-        parentContainer.style.top = newTop + "px";
-        isShifted = true; // Mark as shifted
-      }
     };
 
     document.onpointerup = function () {
@@ -142,7 +131,6 @@ document.addEventListener("DOMContentLoaded", function () {
       inertiaX = desY;  // Set inertia based on the last movement
       inertiaY = desX;
       document.onpointermove = document.onpointerup = null;
-      isShifted = false; // Reset the shift state on pointer up
     };
 
     return false;
