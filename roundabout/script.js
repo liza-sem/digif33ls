@@ -132,6 +132,7 @@
       inertiaX = desY;  // Set inertia based on the last movement
       inertiaY = desX;
       document.onpointermove = document.onpointerup = null;
+      dragArea.style.cursor = `grab`;
     };
 
     return false;
