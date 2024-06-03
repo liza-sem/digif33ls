@@ -112,6 +112,7 @@
     sX = e.clientX;
     sY = e.clientY;
     inertiaX = inertiaY = 0;  // Reset inertia
+    dragArea.style.cursor = `grabbing`;
 
     document.onpointermove = function (e) {
       e = e || window.event;
