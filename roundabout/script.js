@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener("DOMContentLoaded", function () {
   var baseRadius = 320;
   var autoRotate = true;
-  var rotateSpeed = -60;
+  var rotateSpeed = 7;
   var baseImgWidth = 300;
   var baseImgHeight = 200;
 
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
       radius = baseRadius * 0.7;
       imgWidth = baseImgWidth * 0.7;
       imgHeight = baseImgHeight * 0.7;
-    } else if (window.innerWidth <= 767) {
+    } else if (window.innerWidth <= 967) {
       radius = baseRadius * 0.8;
       imgWidth = baseImgWidth * 0.8;
       imgHeight = baseImgHeight * 0.8;
@@ -33,14 +33,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   setTimeout(init, 1000);
 
-  var odrag = document.querySelector('.fe-block-yui_3_17_2_1_1717071640427_17223 .summary-item-list-container');
-  var ospin = document.querySelector('.fe-block-yui_3_17_2_1_1717071640427_17223 .summary-item-list');
-  var aImg = ospin.querySelectorAll('.summary-item');
+  var ospindrag = document.querySelector('.fe-block-yui_3_17_2_1_1717071640427_17223 .summary-item-list');
+  var aImg = ospindrag.querySelectorAll('.summary-item');
 
   var aEle = [...aImg];
 
-  ospin.style.width = imgWidth + "px";
-  ospin.style.height = imgHeight + "px";
+  ospindrag.style.width = imgWidth + "px";
+  ospindrag.style.height = imgHeight + "px";
 
   var ground = document.getElementById('ground');
   if (ground) {
@@ -53,8 +52,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function init() {
-    ospin.style.width = imgWidth + "px";
-    ospin.style.height = imgHeight + "px";
+    ospindrag.style.width = imgWidth + "px";
+    ospindrag.style.height = imgHeight + "px";
 
     if (ground) {
       ground.style.width = radius * 3 + "px";
@@ -68,31 +67,47 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  function applyTransform(obj) {
-    if (tY > 180) tY = 180;
-    if (tY < -180) tY = -180;
-    obj.style.transform = "rotateX(" + (-tY) + "deg) rotateY(" + (tX) + "deg)";
+  var currentRotateX = -10;  // Initial rotation
+  var currentRotateY = 0;
+  var dragging = false;
+  var lastTime = 0;
+  var inertiaX = 0;
+  var inertiaY = 0;
+
+  function applyTransform() {
+    ospindrag.style.transform = `rotateX(${currentRotateX}deg) rotateY(${currentRotateY}deg)`;
   }
 
-  function playSpin(yes) {
-    ospin.style.animationPlayState = (yes ? 'running' : 'paused');
+  function animate(time) {
+    if (!dragging) {
+      if (autoRotate) {
+        var delta = time - lastTime;
+        currentRotateY += (rotateSpeed / 1000) * delta;
+      }
+      currentRotateY += inertiaY * 0.1;
+      currentRotateX -= inertiaX * 0.1;
+      inertiaY *= 0.95;
+      inertiaX *= 0.95;
+      if (Math.abs(inertiaY) < 0.01) inertiaY = 0;
+      if (Math.abs(inertiaX) < 0.01) inertiaX = 0;
+    }
+    applyTransform();
+    lastTime = time;
+    requestAnimationFrame(animate);
   }
+
+  requestAnimationFrame(animate);
 
   var sX, sY, nX, nY, desX = 0,
-    desY = 0,
-    tX = 0,
-    tY = 20;
+    desY = 0;
 
-  if (autoRotate) {
-    var animationName = (rotateSpeed > 0 ? 'spin' : 'spinRevert');
-    ospin.style.animation = `${animationName} ${Math.abs(rotateSpeed)}s infinite linear`;
-  }
-
-  document.onpointerdown = function (e) {
-    clearInterval(odrag.timer);
+  var dragArea = document.querySelector('section[data-section-id="66549d7eeeeaf012a576eb48"]');
+  dragArea.onpointerdown = function (e) {
+    dragging = true;
     e = e || window.event;
     sX = e.clientX;
     sY = e.clientY;
+    inertiaX = inertiaY = 0;  // Reset inertia
 
     document.onpointermove = function (e) {
       e = e || window.event;
@@ -100,56 +115,50 @@ document.addEventListener("DOMContentLoaded", function () {
       nY = e.clientY;
       desX = nX - sX;
       desY = nY - sY;
-      tX += desX * 0.1;
-      tY += desY * 0.1;
-      applyTransform(odrag);
+      currentRotateY += desX * 0.1;
+      currentRotateX -= desY * 0.1;
+      applyTransform();
       sX = nX;
       sY = nY;
     };
 
     document.onpointerup = function () {
-      odrag.timer = setInterval(function () {
-        desX *= 0.95;
-        desY *= 0.95;
-        tX += desX * 0.1;
-        tY += desY * 0.1;
-        applyTransform(odrag);
-        playSpin(false);
-        if (Math.abs(desX) < 0.5 && Math.abs(desY) < 0.5) {
-          clearInterval(odrag.timer);
-          playSpin(true);
-        }
-      }, 17);
+      dragging = false;
+      inertiaX = desY;  // Set inertia based on the last movement
+      inertiaY = desX;
       document.onpointermove = document.onpointerup = null;
     };
 
     return false;
   };
 
+  // Prevent scrolling on mobile while interacting with the section
+  dragArea.addEventListener('touchstart', function (e) {
+    e.preventDefault();
+  }, { passive: false });
+
+  dragArea.addEventListener('touchmove', function (e) {
+    e.preventDefault();
+  }, { passive: false });
+
+  dragArea.addEventListener('touchend', function (e) {
+    e.preventDefault();
+  }, { passive: false });
+
   const links = document.querySelectorAll('.summary-item');
   const headerTextElement = document.querySelector('.summary-header-text');
   const originalHeaderText = headerTextElement.textContent;
 
   links.forEach(link => {
-    link.addEventListener('mouseover', () => {
-      links.forEach(l => {
-        if (l !== link) {
-          l.classList.add('blur');
-        }
-      });
-
-      const titleLink = link.querySelector('.summary-title-link');
-      if (titleLink) {
+    const titleLink = link.querySelector('.summary-title-link');
+    if (titleLink) {
+      link.addEventListener('mouseenter', () => {
         headerTextElement.textContent = titleLink.textContent;
-      }
-    });
-
-    link.addEventListener('mouseout', () => {
-      links.forEach(l => {
-        l.classList.remove('blur');
       });
-      headerTextElement.textContent = originalHeaderText;
-    });
+      link.addEventListener('mouseleave', () => {
+        headerTextElement.textContent = originalHeaderText;
+      });
+    }
   });
 
   const thumbnailLinks = document.querySelectorAll('.summary-thumbnail-outer-container a');
