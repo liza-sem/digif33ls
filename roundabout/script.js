@@ -22,7 +22,7 @@
       radius = baseRadius * 1.3;
       imgWidth = baseImgWidth * 1.1;
       imgHeight = baseImgHeight * 1.1;
-      else {
+    } else {
       radius = baseRadius;
       imgWidth = baseImgWidth;
       imgHeight = baseImgHeight;
