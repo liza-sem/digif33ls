@@ -18,7 +18,11 @@
       radius = baseRadius * 0.8;
       imgWidth = baseImgWidth * 0.8;
       imgHeight = baseImgHeight * 0.8;
-    } else {
+    } else if (window.innerWidth <= 3000) {
+      radius = baseRadius * 1.3;
+      imgWidth = baseImgWidth * 1.1;
+      imgHeight = baseImgHeight * 1.1;
+      else {
       radius = baseRadius;
       imgWidth = baseImgWidth;
       imgHeight = baseImgHeight;
@@ -31,7 +35,7 @@
     init();
   });
 
-  setTimeout(init, 1000);
+  setTimeout(init, 1500);
 
   var ospindrag = document.querySelector('.fe-block-yui_3_17_2_1_1717071640427_17223 .summary-item-list');
   var aImg = ospindrag.querySelectorAll('.summary-item');
