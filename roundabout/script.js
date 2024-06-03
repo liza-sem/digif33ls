@@ -67,7 +67,8 @@
     for (var i = 0; i < aEle.length; i++) {
       aEle[i].style.transform = "rotateY(" + (i * (360 / aEle.length)) + "deg) translateZ(" + radius + "px)";
       aEle[i].style.opacity = "1";
-      aEle[i].style.transition = "all 1s";
+      aEle[i].style.transition = "all .6s";
+        aEle[i].style.transitionDelay = delayTime || (aEle.length - i) / 4 + "s";
     }
   }
 
