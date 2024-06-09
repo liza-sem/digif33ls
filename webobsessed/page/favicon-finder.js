@@ -10,9 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const faviconUrl = getFaviconUrl(href);
     const faviconImg = document.createElement('img');
     faviconImg.src = faviconUrl;
-    faviconImg.style.width = '16px';
-    faviconImg.style.height = '16px';
-    faviconImg.style.marginRight = '8px';
     faviconImg.onload = function() {
       if (faviconImg.naturalWidth === 0 || faviconImg.naturalHeight === 0) {
         faviconImg.src = defaultImageUrl;
