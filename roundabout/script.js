@@ -19,9 +19,9 @@
       imgWidth = baseImgWidth * 0.8;
       imgHeight = baseImgHeight * 0.8;
     } else if (window.innerWidth <= 3000) {
-      radius = baseRadius * 1.3;
-      imgWidth = baseImgWidth * 1.1;
-      imgHeight = baseImgHeight * 1.1;
+      radius = baseRadius * 1.5;
+      imgWidth = baseImgWidth * 1.3;
+      imgHeight = baseImgHeight * 1.3;
     } else {
       radius = baseRadius;
       imgWidth = baseImgWidth;
