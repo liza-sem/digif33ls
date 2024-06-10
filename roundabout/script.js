@@ -152,7 +152,7 @@
   }, { passive: false });
 
   const links = document.querySelectorAll('.summary-item');
-  const headerTextElement = document.querySelector('.summary-header-text');
+  const headerTextElement = document.querySelector('.fe-block fe-block-yui_3_17_2_1_1718027379677_4229 span');
   const originalHeaderText = headerTextElement.textContent;
 
   links.forEach(link => {
