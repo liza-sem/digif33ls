@@ -111,7 +111,7 @@ $(document).ready(function() {
             //font
         "neue-haas-grotesk":{
             "name":"Neue-Haas-Grotesk",
-            "description":"By Linotype",
+            "description":"By Linotype <br> Available on Squarespace",
             "link":"https://www.myfonts.com/collections/neue-haas-grotesk-font-linotype"
         },
         "classic-grotesque-pro-regular":{
@@ -128,8 +128,27 @@ $(document).ready(function() {
             "name":"Times New Arial",
             "description":"By Liebermann Kiepe Reddemann",
             "link":"https://timesnewarial.liebermannkiepereddemann.de/?ref=digif33ls.com"
-            }        
-        
+            },        
+        "vt323":{
+            "name":"VT323",
+            "description":"By Peter Hull <br> Available on Squarespace",
+            "link":"https://fonts.google.com/specimen/VT323?ref=digif33ls.com"
+            },
+        "bureau-grot":{
+            "name":"Bureau Grot",
+            "description":"By Font Bureau",
+            "link":"https://www.myfonts.com/collections/bureau-grot-font-font-bureau"
+        },
+        "caslon-ionic":{
+            "name":"Caslon Ionic",
+            "description":"By Paul Barnes, Greg Gazdowicz",
+            "link":"https://commercialtype.com/catalog/caslon_ionic?ref=digif33ls.com"
+        },
+        "dotgothic16":{
+            "name":"DotGothic16",
+            "description":"By Fontworks Inc. <br> Available on Squarespace",
+            "link":"https://fonts.google.com/specimen/DotGothic16?ref=digif33ls.com"
+        },
 
     };
 
