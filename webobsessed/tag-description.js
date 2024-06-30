@@ -118,7 +118,12 @@ $(document).ready(function() {
             "name":"Classic Grotesque Pro Regular",
             "description":"By Monotype",
             "link":"https://www.myfonts.com/products/regular-classic-grotesque-346022"
-            }
+            },
+        "compagnon-roman":{
+            "name":"Compagnon Roman",
+            "description":"By Velvetyne",
+            "link":"https://velvetyne.fr/fonts/compagnon/"
+            }   
         
 
     };
