@@ -152,6 +152,21 @@ $(document).ready(function() {
             "name":"Antique",
             "description":"By François Rappo",
             "link":"https://optimo.ch/typefaces/antique_legacy?ref=digif33ls.com"
+        },
+        "helvetica":{
+            "name":"Helvetica",
+            "description":"By Linotype <br> Available on Squarespace",
+            "link":"https://www.myfonts.com/collections/helvetica-font-linotype"
+        },
+        "neue-haas-unica-pro":{
+            "name":"Neue Haas Unica Pro",
+            "description":"By Linotype <br> Available on Squarespace",
+            "link":"https://www.myfonts.com/collections/neue-haas-unica-font-linotype"
+        },
+        "monument-grotesk":{
+            "name":"Monument Grotesk",
+            "description":"By Dinamo",
+            "link":"https://abcdinamo.com/typefaces/monument-grotesk?ref=digif33ls.com"
         }        
     };
 
