@@ -105,7 +105,12 @@ $(document).ready(function() {
         "name": "Google Sheets",
         "description": "Google Sheets is a cloud-based spreadsheet application that allows users to create, edit, and collaborate on spreadsheets in real-time, with powerful data analysis and visualization tools.",
         "link": "https://www.google.com/sheets/about/"
-    }
+    },
+    "neue-haas-grotesk":{
+        "name":"Neue-Haas-Grotesk",
+        "description":"By Linotype",
+        "link":"https://www.myfonts.com/collections/neue-haas-grotesk-font-linotype"
+    }    
 
     };
 
