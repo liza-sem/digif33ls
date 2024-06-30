@@ -150,8 +150,8 @@ $(document).ready(function() {
         }
     };
 
+
     function insertTagDescriptions() {
-        // Function implementation
     }
 
     const observer = new MutationObserver(function(mutationsList, observer) {
