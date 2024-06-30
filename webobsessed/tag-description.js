@@ -148,7 +148,7 @@ $(document).ready(function() {
             "name":"DotGothic16",
             "description":"By Fontworks Inc. <br> Available on Squarespace",
             "link":"https://fonts.google.com/specimen/DotGothic16?ref=digif33ls.com"
-        },
+        }
 
     };
 
