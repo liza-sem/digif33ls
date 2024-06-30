@@ -129,7 +129,7 @@ $(document).ready(function() {
 
                 const newDiv = `
                     <div class="tag-description" df-filter-value="${filterValue}">
-                        <a href="${link || '#'}" class="cf-df-name" target=_blank>${name}</a>
+                        <a href="${link || '#'}" class="cf-df-name" target="_blank">${name}</a>
                         <div class="cf-df-description">${description || ''}</div>
                     </div>
                 `;
