@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
     const tagDescriptions = {
+        //tech
     "kirby": {
         "name": "Kirby",
         "description": "Kirby is a file-based CMS that provides developers with full flexibility and control over the design and functionality of their websites, leveraging a simple and intuitive interface.",
@@ -106,11 +107,19 @@ $(document).ready(function() {
         "description": "Google Sheets is a cloud-based spreadsheet application that allows users to create, edit, and collaborate on spreadsheets in real-time, with powerful data analysis and visualization tools.",
         "link": "https://www.google.com/sheets/about/"
     },
+
+        //font
     "neue-haas-grotesk":{
         "name":"Neue-Haas-Grotesk",
         "description":"By Linotype",
         "link":"https://www.myfonts.com/collections/neue-haas-grotesk-font-linotype"
-    }    
+    },
+        "classic-grotesque-pro-regular":{
+            "name":"Classic Grotesque Pro Regular",
+            "description":"By Monotype",
+            "link":"https://www.myfonts.com/products/regular-classic-grotesque-346022"
+            }
+        
 
     };
 
