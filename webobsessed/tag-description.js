@@ -14,7 +14,7 @@ $(document).ready(function() {
     "readymag": {
         "name": "ReadyMag",
         "description": "ReadyMag is a design tool for creating visually compelling web projects such as websites, portfolios, and presentations, emphasizing creativity and ease of use.",
-        "link": "https://readymag.com"
+        "link": "https://my.readymag.com/inv/u3558437206"
     },
     "shopify": {
         "name": "Shopify",
