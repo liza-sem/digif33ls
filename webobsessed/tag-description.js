@@ -109,7 +109,7 @@ $(document).ready(function() {
     
             //font
         "neue-haas-grotesk":{
-            "name":"Neue-Haas-Grotesk",
+            "name":"Neue Haas Grotesk",
             "description":"By Linotype <br> Available on Squarespace",
             "link":"https://www.myfonts.com/collections/neue-haas-grotesk-font-linotype"
         },
@@ -147,7 +147,12 @@ $(document).ready(function() {
             "name":"DotGothic16",
             "description":"By Fontworks Inc. <br> Available on Squarespace",
             "link":"https://fonts.google.com/specimen/DotGothic16?ref=digif33ls.com"
-        }
+        },
+        "antique":{
+            "name":"Antique",
+            "description":"By François Rappo",
+            "link":"https://optimo.ch/typefaces/antique_legacy?ref=digif33ls.com"
+        }        
     };
 
 
