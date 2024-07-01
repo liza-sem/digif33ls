@@ -167,6 +167,11 @@ $(document).ready(function() {
             "name":"Monument Grotesk",
             "description":"By Dinamo",
             "link":"https://abcdinamo.com/typefaces/monument-grotesk?ref=digif33ls.com"
+        },
+        "chikarego2":{
+            "name":"ChiKareGo2",
+            "description":"By Giles Booth",
+            "link":"https://www.pentacom.jp/pentacom/bitfontmaker2/gallery/?id=3780?ref=digif33ls.com"
         }        
     };
 
