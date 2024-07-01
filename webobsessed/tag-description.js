@@ -108,6 +108,11 @@ $(document).ready(function() {
         },
     
             //font
+         "syne-mono":{
+            "name":"Syne Mono",
+            "description":"By Bonjour Monde, Lucas Descroix <br> Available on Squarespace",
+            "link":"https://fonts.google.com/specimen/Syne+Mono?ref=digif33ls.com"
+        },        
         "neue-haas-grotesk":{
             "name":"Neue Haas Grotesk",
             "description":"By Linotype <br> Available on Squarespace",
@@ -158,8 +163,8 @@ $(document).ready(function() {
             "description":"By Linotype <br> Available on Squarespace",
             "link":"https://www.myfonts.com/collections/helvetica-font-linotype"
         },
-        "neue-haas-unica-pro":{
-            "name":"Neue Haas Unica Pro",
+        "neue-haas-unica":{
+            "name":"Neue Haas Unica",
             "description":"By Linotype <br> Available on Squarespace",
             "link":"https://www.myfonts.com/collections/neue-haas-unica-font-linotype"
         },
