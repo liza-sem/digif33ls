@@ -108,6 +108,31 @@ $(document).ready(function() {
         },
     
             //font
+         "necto":{
+            "name":"Necto",
+            "description":"By Marco Condello",
+            "link":"https://www.collletttivo.it/typefaces/necto-mono?ref=digif33ls.com"
+        },        
+         "suisse":{
+            "name":"Suisse",
+            "description":"By Swiss Typefaces",
+            "link":"https://www.swisstypefaces.com/fonts/suisse/#font?ref=digif33ls.com"
+        },        
+         "next-mono":{
+            "name":"Next Mono",
+            "description":"By Ludovic Balland",
+            "link":"https://optimo.ch/typefaces/next?ref=digif33ls.com"
+        },        
+         "adobe-garamond":{
+            "name":"Adobe Garamond",
+            "description":"By Adobe <br> Available on Squarespace",
+            "link":"https://www.myfonts.com/collections/garamond-font-adobe"
+        },
+         "century-schoolbook":{
+            "name":"Century Schoolbook",
+            "description":"By URW Type Foundry <br> Alternative 'Schoolbook' Available on Squarespace",
+            "link":"https://www.myfonts.com/collections/century-schoolbook-font-urw"
+        },        
          "syne-mono":{
             "name":"Syne Mono",
             "description":"By Bonjour Monde, Lucas Descroix <br> Available on Squarespace",
