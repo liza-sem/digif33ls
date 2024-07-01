@@ -113,6 +113,26 @@ $(document).ready(function() {
         },
     
             //font
+        "scto-grotesk-a": {
+    "name": "Scto Grotesk A",
+    "description": "By Schick Toikka",
+    "link": "https://www.schick-toikka.com/scto-grotesk-a?ref=digif33ls.com"
+},
+        "everett": {
+    "name": "Everett",
+    "description": "By Nolan Paparelli",
+    "link": "https://www.weltkern.com/shop/detail-typeface/everett?ref=digif33ls.com"
+},
+        "baikal": {
+    "name": "Baikal",
+    "description": "By Ian Party",
+    "link": "https://newglyph.com/typeface/baikal/?ref=digif33ls.com"
+},
+        "lyon": {
+    "name": "Lyon",
+    "description": "By Kai Bernau",
+    "link": "https://commercialtype.com/catalog/lyon?ref=digif33ls.com"
+},
          "necto":{
             "name":"Necto",
             "description":"By Marco Condello",
