@@ -118,6 +118,11 @@ $(document).ready(function() {
     "description": "By Schick Toikka",
     "link": "https://www.schick-toikka.com/scto-grotesk-a?ref=digif33ls.com"
 },
+        "whyte": {
+    "name": "Whyte",
+    "description": "By Dinamo",
+    "link": "https://abcdinamo.com/typefaces/whyte?ref=digif33ls.com"
+},
         "everett": {
     "name": "Everett",
     "description": "By Nolan Paparelli",
