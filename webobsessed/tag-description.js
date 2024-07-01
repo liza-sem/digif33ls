@@ -12,7 +12,7 @@ $(document).ready(function() {
             "link": "https://squarespace.com?ref=digif33ls.com"
         },
         "readymag": {
-            "name": "ReadyMag",
+            "name": "Readymag",
             "description": "ReadyMag is a design tool for creating visually compelling web projects such as websites, portfolios, and presentations, emphasizing creativity and ease of use.",
             "link": "https://my.readymag.com/inv/u3558437206"
         },
@@ -40,6 +40,11 @@ $(document).ready(function() {
             "name": "Next.js",
             "description": "Next.js is a React-based framework that allows developers to build server-side rendered and statically generated websites and applications with ease.",
             "link": "https://nextjs.org?ref=digif33ls.com"
+        },
+        "nginx": {
+            "name": "Nginx",
+            "description": "Nginx is a popular web server software known for its high performance and scalability.",
+            "link": "https://www.nginx.com/?ref=digif33ls.com"
         },
         "nodejs": {
             "name": "Node.js",
