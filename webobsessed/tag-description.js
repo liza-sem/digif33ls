@@ -113,6 +113,11 @@ $(document).ready(function() {
         },
     
             //font
+        "karla": {
+    "name": "Karla",
+    "description": "By Jonny Pinhorn <br> Available in Squarespace",
+    "link": "https://fonts.google.com/specimen/Karla?ref=digif33ls.com"
+},
         "scto-grotesk-a": {
     "name": "Scto Grotesk A",
     "description": "By Schick Toikka",
