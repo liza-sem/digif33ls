@@ -272,7 +272,7 @@ $(document).ready(function() {
                     </div>
                 `;
 
-                $('.content .custom-tag-desription').prepend(newDiv);
+                $('.content .blog-basic-grid').prepend(newDiv);
             }
         });
     }
