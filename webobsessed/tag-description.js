@@ -17,8 +17,7 @@ $(document).ready(function() {
             "description": "Gatsby is a modern website framework that builds performance-optimized websites with React.",
             "link": "https://www.gatsbyjs.com/?ref=digif33ls.com"
         },
-        "kirby":  {
-    "name",
+
         "squarespace": {
             "name": "Squarespace",
             "description": "Squarespace is a popular website builder known for its elegant templates and all-in-one platform, making it easy to create professional and responsive websites without coding knowledge.",
