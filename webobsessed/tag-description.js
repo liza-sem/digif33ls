@@ -2,6 +2,12 @@ $(document).ready(function() {
     const tagDescriptions = {
         //i want to insert the string here
   
+"kirby": {
+    "name": "Kirby",
+    "description": "Kirby is a file-based CMS for websites, apps, and data-driven products.",
+    "link": "https://getkirby.com/?ref=digif33ls.com"
+},
+
 
 
       "astro": {
