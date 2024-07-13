@@ -1,7 +1,13 @@
 $(document).ready(function() {
     const tagDescriptions = {
         //i want to insert the string here
-        "gatsby": {
+  
+"svelte": {
+    "name": "Svelte",
+    "description": "Svelte is a modern web framework that compiles your code into highly efficient vanilla JavaScript at build time.",
+    "link": "https://svelte.dev/?ref=digif33ls.com"
+},
+      "gatsby": {
             "name": "Gatsby",
             "description": "Gatsby is a modern website framework that builds performance-optimized websites with React.",
             "link": "https://www.gatsbyjs.com/?ref=digif33ls.com"
