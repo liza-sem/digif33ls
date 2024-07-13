@@ -3,11 +3,9 @@ $(document).ready(function() {
         //i want to insert the string here
   
 
-"astro": {
-    "name": "Astro",
-    "description": "testing",
-    "link": "https://astro.build/?ref=digif33ls.com"
-},
+
+"astro":  {
+    "name",
 
 "svelte": {
     "name": "Svelte",
