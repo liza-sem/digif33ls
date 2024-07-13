@@ -1,7 +1,8 @@
 $(document).ready(function() {
     const tagDescriptions = {
         //i want to insert the string here
-        "astro": {
+  
+      "astro": {
     "name": "Astro",
     "description": "Astro is a JavaScript web framework optimized for building fast, content-driven websites by rendering components on the server and delivering lightweight HTML to the browser. ",
     "link": "https://astro.build/?ref=digif33ls.com"
@@ -16,11 +17,8 @@ $(document).ready(function() {
             "description": "Gatsby is a modern website framework that builds performance-optimized websites with React.",
             "link": "https://www.gatsbyjs.com/?ref=digif33ls.com"
         },
-        "kirby": {
-            "name": "Kirby",
-            "description": "Kirby is a file-based CMS that provides developers with full flexibility and control over the design and functionality of their websites, leveraging a simple and intuitive interface.",
-            "link": "https://getkirby.com?ref=digif33ls.com"
-        },
+        "kirby":  {
+    "name",
         "squarespace": {
             "name": "Squarespace",
             "description": "Squarespace is a popular website builder known for its elegant templates and all-in-one platform, making it easy to create professional and responsive websites without coding knowledge.",
