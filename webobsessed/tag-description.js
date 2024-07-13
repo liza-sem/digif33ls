@@ -11,12 +11,6 @@ $(document).ready(function() {
     "description": "Wix is a versatile website builder that offers drag-and-drop functionality, allowing users to create stunning, mobile-optimized websites with minimal technical skills.",
     "link": "https://wix.com?ref=digif33ls.com"
 },
-
-"kirby": {
-    "name": "Kirby",
-    "description": "Kirby is a file-based CMS for websites, apps, and data-driven products.",
-    "link": "https://getkirby.com/?ref=digif33ls.com"
-},
   "astro": {
     "name": "Astro",
     "description": "Astro is a JavaScript web framework optimized for building fast, content-driven websites by rendering components on the server and delivering lightweight HTML to the browser. ",
