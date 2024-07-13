@@ -2,11 +2,9 @@ $(document).ready(function() {
     const tagDescriptions = {
         //i want to insert the string here
   
+
 "kirby": {
-    "name": "Kirby",
-    "description": "test",
-    "link": "https://getkirby.com/?ref=digif33ls.com"
-},
+    "name",
     "astro": {
     "name": "Astro",
     "description": "Astro is a JavaScript web framework optimized for building fast, content-driven websites by rendering components on the server and delivering lightweight HTML to the browser. ",
