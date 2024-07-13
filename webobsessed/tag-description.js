@@ -1,13 +1,12 @@
 $(document).ready(function() {
     const tagDescriptions = {
         //tech
-        "kirby": {
-           
-"gatsby": {
+        "gatsby": {
     "name": "Gatsby",
     "description": "Gatsby is a modern website framework that builds performance-optimized websites with React.",
     "link": "https://www.gatsbyjs.com/?ref=digif33ls.com"
 },
+        "kirby": {
  "name": "Kirby",
             "description": "Kirby is a file-based CMS that provides developers with full flexibility and control over the design and functionality of their websites, leveraging a simple and intuitive interface.",
             "link": "https://getkirby.com?ref=digif33ls.com"
