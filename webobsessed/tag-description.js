@@ -1,14 +1,12 @@
 $(document).ready(function() {
     const tagDescriptions = {
         //i want to insert the string here
-
-"
 "kirby": {
     "name": "Kirby",
     "description": "Kirby CMS is a flexible, file-based content management system that enables developers to create custom websites with a focus on simplicity and user-friendly content management.",
     "link": "https://getkirby.com/?ref=digif33ls.com"
 },
-wix": {
+"wix": {
     "name": "Wix",
     "description": "Wix is a versatile website builder that offers drag-and-drop functionality, allowing users to create stunning, mobile-optimized websites with minimal technical skills.",
     "link": "https://wix.com?ref=digif33ls.com"
