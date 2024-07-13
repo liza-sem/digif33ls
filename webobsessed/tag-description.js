@@ -39,10 +39,7 @@ $(document).ready(function() {
             "link": "https://shopify.com?ref=digif33ls.com"
         },
         "wix": {
-            "name": "Wix",
-            "description": "Wix is a versatile website builder that offers drag-and-drop functionality, allowing users to create stunning, mobile-optimized websites with minimal technical skills.",
-            "link": "https://wix.com?ref=digif33ls.com"
-        },
+    "name"
         "webflow": {
             "name": "Webflow",
             "description": "Webflow is a powerful web design tool and CMS that enables designers to build fully responsive websites visually, without writing code, and to manage content with ease.",
