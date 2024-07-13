@@ -1,24 +1,6 @@
 $(document).ready(function() {
     const tagDescriptions = {
         //i want to insert the string here
-  
-"kirby": {
-    "name": "Kirby",
-    "description": "test",
-    "link": "https://getkirby.com/?ref=digif33ls.com"
-},
-
-"kirby": {
-    "name": "Kirby",
-    "description": "test",
-    "link": "https://getkirby.com/?ref=digif33ls.com"
-},
-
-"kirby": {
-    "name": "Kirby",
-    "description": "test",
-    "link": "https://getkirby.com/?ref=digif33ls.com"
-},
 
 "wix": {
     "name": "Wix",
