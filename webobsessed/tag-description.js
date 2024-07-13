@@ -2,7 +2,13 @@ $(document).ready(function() {
     const tagDescriptions = {
         //tech
         "kirby": {
-            "name": "Kirby",
+           
+"gatsby": {
+    "name": "Gatsby",
+    "description": "Gatsby is a modern website framework that builds performance-optimized websites with React.",
+    "link": "https://www.gatsbyjs.com/?ref=digif33ls.com"
+},
+ "name": "Kirby",
             "description": "Kirby is a file-based CMS that provides developers with full flexibility and control over the design and functionality of their websites, leveraging a simple and intuitive interface.",
             "link": "https://getkirby.com?ref=digif33ls.com"
         },
@@ -215,7 +221,7 @@ $(document).ready(function() {
         },
         "antique":{
             "name":"Antique",
-            "description":"By François Rappo",
+            "description":"By Fran?ois Rappo",
             "link":"https://optimo.ch/typefaces/antique_legacy?ref=digif33ls.com"
         },
         "helvetica":{
