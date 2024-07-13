@@ -38,8 +38,7 @@ $(document).ready(function() {
             "description": "Shopify is a comprehensive e-commerce platform that allows users to set up, manage, and grow their online stores with a range of customizable templates and tools.",
             "link": "https://shopify.com?ref=digif33ls.com"
         },
-        "wix": {
-    "name"
+
         "webflow": {
             "name": "Webflow",
             "description": "Webflow is a powerful web design tool and CMS that enables designers to build fully responsive websites visually, without writing code, and to manage content with ease.",
