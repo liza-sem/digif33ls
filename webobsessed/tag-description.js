@@ -1,13 +1,13 @@
 $(document).ready(function() {
     const tagDescriptions = {
         //i want to insert the string here
-"a
+
 "san-francisco": {
     "name": "San Francisco",
     "description": "By Apple",
     "link": "https://developer.apple.com/fonts/?ref=digif33ls.com"
 },
-stro": {
+"astro": {
     "name": "Astro",
     "description": "Astro is a JavaScript web framework optimized for building fast, content-driven websites by rendering components on the server and delivering lightweight HTML to the browser. ",
     "link": "https://astro.build/?ref=digif33ls.com"
