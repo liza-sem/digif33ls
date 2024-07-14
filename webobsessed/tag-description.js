@@ -1,9 +1,7 @@
 $(document).ready(function() {
     const tagDescriptions = {
         //i want to insert the string here
-
-
-"rhymes": {
+        "rhymes": {
     "name": "Rhymes",
     "description": "By Jakub Samek",
     "link": "https://maxitype.com/typeface/rhymes/?ref=digif33ls.com"
