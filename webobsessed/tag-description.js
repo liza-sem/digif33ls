@@ -3,18 +3,15 @@ $(document).ready(function() {
         //i want to insert the string here
   
 
+
+
       
         "kirby": {
     "name": "Kirby",
     "description": "Kirby CMS is a flexible, file-based content management system that enables developers to create custom websites with a focus on simplicity and user-friendly content management.",
     "link": "https://getkirby.com/?ref=digif33ls.com"
 },
-"wix": {
-    "name": "Wix",
-    "description": "Wix is a versatile website builder that offers drag-and-drop functionality, allowing users to create stunning, mobile-optimized websites with minimal technical skills.",
-    "link": "https://wix.com?ref=digif33ls.com"
-},
-  "astro": {
+"astro": {
     "name": "Astro",
     "description": "Astro is a JavaScript web framework optimized for building fast, content-driven websites by rendering components on the server and delivering lightweight HTML to the browser. ",
     "link": "https://astro.build/?ref=digif33ls.com"
