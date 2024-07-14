@@ -1,27 +1,21 @@
 $(document).ready(function() {
     const tagDescriptions = {
         //i want to insert the string here
-  
-"wix": {
-    "name": "Wix",
-    "description": "Wix is a versatile website builder that offers drag-and-drop functionality, allowing users to create stunning, mobile-optimized websites with minimal technical skills.",
-    "link": "https://wix.com?ref=digif33ls.com"
-},
-
-
-
-
-      
+        "wix": {
+            "name": "Wix",
+            "description": "Wix is a versatile website builder that offers drag-and-drop functionality, allowing users to create stunning, mobile-optimized websites with minimal technical skills.",
+            "link": "https://wix.com?ref=digif33ls.com"
+        },
         "kirby": {
-    "name": "Kirby",
-    "description": "Kirby CMS is a flexible, file-based content management system that enables developers to create custom websites with a focus on simplicity and user-friendly content management.",
-    "link": "https://getkirby.com/?ref=digif33ls.com"
-},
-"astro": {
-    "name": "Astro",
-    "description": "Astro is a JavaScript web framework optimized for building fast, content-driven websites by rendering components on the server and delivering lightweight HTML to the browser. ",
-    "link": "https://astro.build/?ref=digif33ls.com"
-},
+            "name": "Kirby",
+            "description": "Kirby CMS is a flexible, file-based content management system that enables developers to create custom websites with a focus on simplicity and user-friendly content management.",
+            "link": "https://getkirby.com/?ref=digif33ls.com"
+        },
+        "astro": {
+            "name": "Astro",
+            "description": "Astro is a JavaScript web framework optimized for building fast, content-driven websites by rendering components on the server and delivering lightweight HTML to the browser. ",
+            "link": "https://astro.build/?ref=digif33ls.com"
+        },
 "svelte": {
     "name": "Svelte",
     "description": "Svelte is a modern web framework that compiles your code into highly efficient vanilla JavaScript at build time.",
@@ -32,7 +26,6 @@ $(document).ready(function() {
             "description": "Gatsby is a modern website framework that builds performance-optimized websites with React.",
             "link": "https://www.gatsbyjs.com/?ref=digif33ls.com"
         },
-
         "squarespace": {
             "name": "Squarespace",
             "description": "Squarespace is a popular website builder known for its elegant templates and all-in-one platform, making it easy to create professional and responsive websites without coding knowledge.",
