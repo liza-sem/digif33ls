@@ -1,7 +1,13 @@
 $(document).ready(function() {
     const tagDescriptions = {
         //i want to insert the string here
-        "rhymes": {
+  
+"times-now": {
+    "name": "Times Now",
+    "description": "By Jan Henrik Arnold",
+    "link": "https://globalfonts.pro/font/times-now?ref=digif33ls.com"
+},
+      "rhymes": {
     "name": "Rhymes",
     "description": "By Jakub Samek",
     "link": "https://maxitype.com/typeface/rhymes/?ref=digif33ls.com"
