@@ -2,6 +2,12 @@ $(document).ready(function() {
     const tagDescriptions = {
         //i want to insert the string here
   
+"fluxisch": {
+    "name": "Fluxisch",
+    "description": "By Gr?goire Vigneron",
+    "link": "https://osp.kitchen/foundry/fluxisch-else/?ref=digif33ls.com"
+},
+
 "times-now": {
     "name": "Times Now",
     "description": "By Jan Henrik Arnold",
