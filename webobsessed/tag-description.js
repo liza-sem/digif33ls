@@ -2,9 +2,7 @@ $(document).ready(function() {
     const tagDescriptions = {
         //i want to insert the string here
 
-"
-
-svelte": {
+"svelte": {
     "name": "Svelte",
     "description": "Svelte is a modern web framework that compiles your code into highly efficient vanilla JavaScript at build time.",
     "link": "https://svelte.dev/?ref=digif33ls.com"
