@@ -1,14 +1,12 @@
 $(document).ready(function() {
     const tagDescriptions = {
         //i want to insert the string here
-
-"
 "astro": {
     "name": "Astro",
     "description": "Astro is a JavaScript web framework optimized for building fast, content-driven websites by rendering components on the server and delivering lightweight HTML to the browser. ",
     "link": "https://astro.build/?ref=digif33ls.com"
 },
-svelte": {
+"svelte": {
     "name": "Svelte",
     "description": "Svelte is a modern web framework that compiles your code into highly efficient vanilla JavaScript at build time.",
     "link": "https://svelte.dev/?ref=digif33ls.com"
