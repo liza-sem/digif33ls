@@ -6,7 +6,8 @@ $(document).ready(function() {
     "name": "Svelte",
     "description": "Svelte is a modern web framework that compiles your code into highly efficient vanilla JavaScript at build time.",
     "link": "https://svelte.dev/?ref=digif33ls.com"
-},,"wix": {
+},
+        "wix": {
             "name": "Wix",
             "description": "Wix is a versatile website builder that offers drag-and-drop functionality, allowing users to create stunning, mobile-optimized websites with minimal technical skills.",
             "link": "https://wix.com?ref=digif33ls.com"
