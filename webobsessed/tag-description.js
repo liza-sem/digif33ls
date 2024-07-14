@@ -1,9 +1,7 @@
 $(document).ready(function() {
     const tagDescriptions = {
         //i want to insert the string here
-  
-
-      "wix": {
+        "wix": {
             "name": "Wix",
             "description": "Wix is a versatile website builder that offers drag-and-drop functionality, allowing users to create stunning, mobile-optimized websites with minimal technical skills.",
             "link": "https://wix.com?ref=digif33ls.com"
