@@ -2,7 +2,13 @@ $(document).ready(function() {
     const tagDescriptions = {
         //i want to insert the string here
 
-"san-francisco": {
+"
+"rhymes": {
+    "name": "Rhymes",
+    "description": "By Jakub Samek",
+    "link": "https://maxitype.com/typeface/rhymes/?ref=digif33ls.com"
+},
+san-francisco": {
     "name": "San Francisco",
     "description": "By Apple",
     "link": "https://developer.apple.com/fonts/?ref=digif33ls.com"
