@@ -2,6 +2,12 @@ $(document).ready(function() {
     const tagDescriptions = {
         //i want to insert the string here
   
+"junicode": {
+    "name": "Junicode",
+    "description": "By Peter S. Baker",
+    "link": "https://www.fontsquirrel.com/fonts/junicode?ref=digif33ls.com"
+},
+
 "fluxisch": {
     "name": "Fluxisch",
     "description": "By Gregoire Vigneron",
