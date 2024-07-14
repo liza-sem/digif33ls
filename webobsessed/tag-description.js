@@ -1,7 +1,9 @@
 $(document).ready(function() {
     const tagDescriptions = {
         //i want to insert the string here
-        "wix": {
+  
+
+      "wix": {
             "name": "Wix",
             "description": "Wix is a versatile website builder that offers drag-and-drop functionality, allowing users to create stunning, mobile-optimized websites with minimal technical skills.",
             "link": "https://wix.com?ref=digif33ls.com"
@@ -16,12 +18,7 @@ $(document).ready(function() {
             "description": "Astro is a JavaScript web framework optimized for building fast, content-driven websites by rendering components on the server and delivering lightweight HTML to the browser. ",
             "link": "https://astro.build/?ref=digif33ls.com"
         },
-"svelte": {
-    "name": "Svelte",
-    "description": "Svelte is a modern web framework that compiles your code into highly efficient vanilla JavaScript at build time.",
-    "link": "https://svelte.dev/?ref=digif33ls.com"
-},
-      "gatsby": {
+"gatsby": {
             "name": "Gatsby",
             "description": "Gatsby is a modern website framework that builds performance-optimized websites with React.",
             "link": "https://www.gatsbyjs.com/?ref=digif33ls.com"
