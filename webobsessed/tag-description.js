@@ -4,7 +4,7 @@ $(document).ready(function() {
   
 "fluxisch": {
     "name": "Fluxisch",
-    "description": "By Gr?goire Vigneron",
+    "description": "By Gregoire Vigneron",
     "link": "https://osp.kitchen/foundry/fluxisch-else/?ref=digif33ls.com"
 },
 
