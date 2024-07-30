@@ -2,6 +2,12 @@ $(document).ready(function() {
     const tagDescriptions = {
         //i want to insert the string here
   
+"eb-garamond": {
+    "name": "EB Garamond",
+    "description": "By Georg Duffner <br> Available in Squarespace",
+    "link": "https://fonts.google.com/specimen/EB+Garamond?ref=digif33ls.com"
+},
+
 "junicode": {
     "name": "Junicode",
     "description": "By Peter S. Baker",
