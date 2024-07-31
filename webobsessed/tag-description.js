@@ -2,6 +2,12 @@ $(document).ready(function() {
     const tagDescriptions = {
         //i want to insert the string here
   
+"prestige-12-pitch": {
+    "name": "Prestige 12 Pitch",
+    "description": "By Clayton Smith",
+    "link": "https://www.myfonts.com/collections/prestige-12-pitch-font-bitstream?ref=digif33ls.com"
+},
+
 "eb-garamond": {
     "name": "EB Garamond",
     "description": "By Georg Duffner <br> Available in Squarespace",
