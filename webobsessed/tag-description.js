@@ -371,7 +371,7 @@ $(document).ready(function() {
             "name":"Borders",
             "description":"A collection of websites with heavy use of borders and lines.",
             "category": "style"
-        },       
+        }       
     };
 
 
