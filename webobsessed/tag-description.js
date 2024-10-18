@@ -378,10 +378,10 @@ $(document).ready(function() {
 
     // Define title templates and canonical patterns based on category
     const categoryTemplates = {
-        "style": "Websites with ${name} Style",
-        "features": "Website with ${name}",
-        "font": "Websites using ${name}",
-        "technologies": "Websites using ${name}"
+        "style": "Websites with ${name} Style - Bookmarked",
+        "features": "Website with ${name} - Bookmarked",
+        "font": "Websites using ${name} Font - Bookmarked",
+        "technologies": "Websites using ${name} - Bookmarked"
     };
 
     function insertTagDescriptions() {
