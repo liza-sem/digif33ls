@@ -428,7 +428,7 @@ $(document).ready(function() {
                 }
 
                 // Dynamically set the canonical URL
-                const newCanonicalURL = `/?${category}=${filterValue}`;
+                const newCanonicalURL = `https://laz-i.com/bookmarked/?${category}=${filterValue}`;
                 let canonicalLink = document.querySelector('link[rel="canonical"]');
                 
                 if (canonicalLink) {
