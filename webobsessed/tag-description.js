@@ -303,55 +303,71 @@ $(document).ready(function() {
 
 
 
-    function insertTagDescriptions() {
-        $('.tag-description').remove();
-        const activeLinks = $('.archive-group-name-link.active');
+function insertTagDescriptions() {
+    $('.tag-description').remove();
+    const activeLinks = $('.archive-group-name-link.active');
 
-        activeLinks.each(function() {
-            const filterValue = $(this).attr('data-filter-val');
+    activeLinks.each(function() {
+        const filterValue = $(this).attr('data-filter-val');
 
-            if (filterValue) {
-                let { name, description, link } = tagDescriptions[filterValue] || {};
+        if (filterValue) {
+            let { name, description, link } = tagDescriptions[filterValue] || {};
 
-                if (!name) {
-                    name = $(this).text().trim();
-                }
-
-                if (!name) {
-                    return;
-                }
-
-                const newDiv = `
-                    <div class="tag-description" df-filter-value="${filterValue}">
-                        <a href="${link || '#'}" class="cf-df-name" target="_blank">${name}</a>
-                        <div class="cf-df-description">${description || ''}</div>
-                    </div>
-                `;
-
-                $('section[data-section-id="6653647cd826b0589a746654"] .content .collection-content-wrapper').prepend(newDiv);
+            if (!name) {
+                name = $(this).text().trim();
             }
-        });
-    }
 
-    const observer = new MutationObserver(function(mutationsList, observer) {
-        let relevantChangeDetected = false;
-
-        for (let mutation of mutationsList) {
-            if (mutation.type === 'childList' || mutation.type === 'attributes') {
-                if ($(mutation.target).find('.archive-group-name-link.active').length > 0 || $(mutation.target).hasClass('archive-group-name-link')) {
-                    relevantChangeDetected = true;
-                    break;
-                }
+            if (!name) {
+                return;
             }
-        }
 
-        if (relevantChangeDetected) {
-            clearTimeout(window.tagDescriptionUpdateTimeout);
-            window.tagDescriptionUpdateTimeout = setTimeout(insertTagDescriptions, 100);
+            // Inject description content into the page
+            const newDiv = `
+                <div class="tag-description" df-filter-value="${filterValue}">
+                    <a href="${link || '#'}" class="cf-df-name" target="_blank">${name}</a>
+                    <div class="cf-df-description">${description || ''}</div>
+                </div>
+            `;
+
+            $('section[data-section-id="6653647cd826b0589a746654"] .content .collection-content-wrapper').prepend(newDiv);
+
+            // Dynamically update the page's <title> tag with "Websites using {name}"
+            document.title = `Websites using ${name}`;
+
+            // Dynamically update the meta description
+            let metaDescription = document.querySelector('meta[name="description"]');
+            if (metaDescription) {
+                metaDescription.setAttribute('content', description || 'Default description for this page.');
+            } else {
+                // If no meta description exists, create one
+                metaDescription = document.createElement('meta');
+                metaDescription.name = "description";
+                metaDescription.content = description || 'Default description for this page.';
+                document.head.appendChild(metaDescription);
+            }
         }
     });
+}
 
-    observer.observe(document.body, { childList: true, subtree: true, attributes: true });
+const observer = new MutationObserver(function(mutationsList, observer) {
+    let relevantChangeDetected = false;
 
-    insertTagDescriptions();
+    for (let mutation of mutationsList) {
+        if (mutation.type === 'childList' || mutation.type === 'attributes') {
+            if ($(mutation.target).find('.archive-group-name-link.active').length > 0 || $(mutation.target).hasClass('archive-group-name-link')) {
+                relevantChangeDetected = true;
+                break;
+            }
+        }
+    }
+
+    if (relevantChangeDetected) {
+        clearTimeout(window.tagDescriptionUpdateTimeout);
+        window.tagDescriptionUpdateTimeout = setTimeout(insertTagDescriptions, 100);
+    }
+});
+
+observer.observe(document.body, { childList: true, subtree: true, attributes: true });
+
+insertTagDescriptions();
 });
