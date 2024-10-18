@@ -371,7 +371,12 @@ $(document).ready(function() {
             "name":"Borders",
             "description":"A collection of websites with heavy use of borders and lines.",
             "category": "style"
-        }       
+        },
+                  "art":{
+            "name":"Art",
+            "description":"A collection of artsy websites.",
+            "category": "category"
+        }  
     };
 
 
@@ -379,6 +384,7 @@ $(document).ready(function() {
     // Define title templates and canonical patterns based on category
     const categoryTemplates = {
         "style": "Websites with ${name} Style - Bookmarked",
+        "category": "Collection of ${name} Websites - Bookmarked",
         "features": "Website with ${name} - Bookmarked",
         "font": "Websites using ${name} Font - Bookmarked",
         "technologies": "Websites using ${name} - Bookmarked"
