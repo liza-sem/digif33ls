@@ -372,6 +372,11 @@ $(document).ready(function() {
             "description":"A collection of websites with heavy use of borders and lines.",
             "category": "style"
         },
+        "stylebordered":{
+            "name":"Borders",
+            "description":"A collection of websites with heavy use of borders and lines.",
+            "category": "style"
+        },
                   "art":{
             "name":"Art",
             "description":"A collection of artsy websites.",
