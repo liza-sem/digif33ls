@@ -1,5 +1,5 @@
   document.addEventListener("DOMContentLoaded", function () {
-  var baseRadius = 320;
+  var baseRadius = 260;
   var autoRotate = true;
   var rotateSpeed = 7;
   var baseImgWidth = 300;
